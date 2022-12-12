@@ -33,17 +33,17 @@ spec:
         livenessProbe:
           httpGet:
             path: /
-            port: 1111
+            port: 1112
           initialDelaySeconds: 10
           periodSeconds: 10
         name: container-image
         ports:
-        - containerPort: 1111
+        - containerPort: 1112
         readinessProbe:
           initialDelaySeconds: 10
           periodSeconds: 10
           tcpSocket:
-            port: 1111
+            port: 1112
         resources:
           limits:
             cpu: "2"
